@@ -1,0 +1,485 @@
+/* COMMENTS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  /* basic area*/
+  section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3586ff;
+    overflow: hidden;
+  }
+  /*Design the Wave*/
+  section .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px
+  }
+  /* Design the 1st Wave*/
+  section .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  /*Design the 2nd Wave*/
+  section .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  /*Design the 3rd Wave*/
+  section .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  /*Design the 4th Wave*/
+  section .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  /*Activate animation using keyframes*/
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#9612e3,black);
+}
+
+
+img.mother{
+    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+}
+img.mother.active{
+    filter: invert(100%) sepia(6%) saturate(7393%) hue-rotate(355deg) brightness(100%) contrast(120%);
+    transform: scale(1.06);
+    transition: all 0.5s ease;
+}
+img.mother.active:hover{
+    transform: rotate(-180deg);
+    transition: 1s
+}
+
+img.mother:hover{
+    filter: invert(100%) sepia(6%) saturate(7393%) hue-rotate(355deg) brightness(100%) contrast(120%);
+    cursor: pointer;
+    transform: scale(1.06);
+    transition: all 0.5s ease;
+}
+img.pup{
+    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    height: 200px;
+    width: 250px;
+}
+img.pup:hover {
+    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    height: 200px;
+    width: 250px;
+    transform: rotate(-180deg);
+    transition: 1s
+}
+img.pup.one{
+    filter: invert(85%) sepia(25%) saturate(550%) hue-rotate(66deg) brightness(90%) contrast(110%);
+    height: 200px;
+    width: 250px;
+}
+img.pup.one.live:hover{
+    filter: invert(100%) sepia(6%) saturate(7393%) hue-rotate(355deg) brightness(100%) contrast(120%);
+    height: 200px;
+    width: 250px;
+}
+img.pup.two{
+    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    height: 200px;
+    width: 250px;
+}
+img.pup.two:hover{
+    filter: invert(78%) sepia(67%) saturate(938%) hue-rotate(204deg) brightness(77%) contrast(120%);
+    height: 200px;
+    width: 250px;
+    transform: rotate(-180deg);
+    transition: 1s
+}
+img.pup.three{
+    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    height: 200px;
+    width: 250px;
+}
+img.pup.three:hover{
+    filter: invert(56%) sepia(20%) saturate(1050%) hue-rotate(304deg) brightness(94%) contrast(120%);
+    height: 200px;
+    width: 250px;
+    transform: rotate(-180deg);
+    transition: 1s
+}
+img.pup.four{
+    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    height: 200px;
+    width: 250px;
+}
+img.pup.four:hover{
+    filter: invert(60%) sepia(4%) saturate(2397%) hue-rotate(291deg) brightness(120%) contrast(120%);
+    height: 200px;
+    width: 250px;
+    transform: rotate(-180deg);
+    transition: 1s
+}
+img.pup.five{
+    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    height: 200px;
+    width: 250px;
+}
+img.pup.five:hover{
+    filter: invert(99%) sepia(3%) saturate(505%) hue-rotate(93deg) brightness(115%) contrast(100%);
+    height: 200px;
+    width: 250px;
+    transform: rotate(-180deg);
+    transition: 1s
+}
+img.pup.six{
+    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    width: 250px;
+}
+img.pup.six:hover{
+    filter: invert(70%) sepia(72%) saturate(0%) hue-rotate(271deg) brightness(80%) contrast(106%);
+    height: 200px;
+    width: 250px;
+    transform: rotate(-180deg);
+    transition: 1s
+}
+img.pup.seven{
+    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    height: 200px;
+    width: 250px;
+}
+img.pup.seven:hover{
+    filter: invert(20%) sepia(1%) saturate(100%) hue-rotate(8deg) brightness(40%) contrast(100%);
+    height: 200px;
+    width: 250px;
+    transform: rotate(-180deg);
+    transition: 1s
+}
+img.pup.eight{
+    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    height: 200px;
+    width: 250px;
+}
+img.pup.eight:hover{
+    filter: invert(60%) sepia(90%) saturate(400%) hue-rotate(184deg) brightness(80%) contrast(120%);
+    height: 200px;
+    width: 250px;
+    transform: rotate(-180deg);
+    transition: 1s
+}
+
+
+.menu{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li{
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transform-origin: 400px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg)translateX(300px);
+    border-radius: 50%;
+}
+.menu.active li{
+    
+    transform: rotate(calc(360deg / 8 * var(--i)));
+    
+}
+.menu li.live:hover{
+    border: 3px solid #ffd700;
+    transition: all 0.5s ease;
+}
+.menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border-radius: 50%;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    color: #111;
+    transition: 0.5s;
+}
+.menu li a:hover{
+    color: #ff1252;
+}
+
+.toggle{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    font-size: 2em;
+    transition: transform 1.25s;
+}
+.toggle:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 9px solid #ffd700;
+    transform: scale(1.06);
+    transform: rotate(-180deg);
+    transition: 1s;
+}
+.toggle.active{
+    background-color: transparent;
+    border: 9px solid #ffd700;
+}
+
+.menu.active .toggle{
+    transform: rotate(-315deg);
+}
+
+@media screen and (max-width: 400px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(45deg,#9612e3,black);
+    }
+    img.mother{
+        filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+        height: 150px;
+        width: 180px;
+    }
+    img.mother.active{
+        filter: invert(100%) sepia(6%) saturate(7393%) hue-rotate(355deg) brightness(100%) contrast(120%);
+        transform: scale(1.06);
+        transition: all 0.5s ease;
+    }
+    img.mother.active:hover{
+        transform: rotate(-180deg);
+        transition: 1s
+    }
+    
+    img.mother:hover{
+        filter: invert(100%) sepia(6%) saturate(7393%) hue-rotate(355deg) brightness(100%) contrast(120%);
+        cursor: pointer;
+        transform: scale(1.06);
+        transition: all 0.5s ease;
+    }
+    img.pup{
+        filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+        height: 80px;
+        width: 90px;
+    }
+    img.pup:hover {
+        filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+        transform: rotate(-180deg);
+        transition: 1s
+    }
+    img.pup.one{
+        filter: invert(85%) sepia(25%) saturate(550%) hue-rotate(66deg) brightness(90%) contrast(110%);
+     
+    }
+    img.pup.one.live:hover{
+        filter: invert(100%) sepia(6%) saturate(7393%) hue-rotate(355deg) brightness(100%) contrast(120%);
+     
+    }
+    img.pup.two{
+        filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+       
+    }
+    img.pup.two:hover{
+        filter: invert(78%) sepia(67%) saturate(938%) hue-rotate(204deg) brightness(77%) contrast(120%);
+        transform: rotate(-180deg);
+        transition: 1s
+    }
+    img.pup.three{
+        filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    }
+    img.pup.three:hover{
+        filter: invert(56%) sepia(20%) saturate(1050%) hue-rotate(304deg) brightness(94%) contrast(120%);
+        transform: rotate(-180deg);
+        transition: 1s
+    }
+    img.pup.four{
+        filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    }
+    img.pup.four:hover{
+        filter: invert(60%) sepia(4%) saturate(2397%) hue-rotate(291deg) brightness(120%) contrast(120%);
+        transform: rotate(-180deg);
+        transition: 1s
+    }
+    img.pup.five{
+        filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    }
+    img.pup.five:hover{
+        filter: invert(99%) sepia(3%) saturate(505%) hue-rotate(93deg) brightness(115%) contrast(100%);
+        transform: rotate(-180deg);
+        transition: 1s
+    }
+    img.pup.six{
+        filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    
+    }
+    img.pup.six:hover{
+        filter: invert(70%) sepia(72%) saturate(0%) hue-rotate(271deg) brightness(80%) contrast(106%);
+        transform: rotate(-180deg);
+        transition: 1s
+    }
+    img.pup.seven{
+        filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    }
+    img.pup.seven:hover{
+        filter: invert(20%) sepia(1%) saturate(100%) hue-rotate(8deg) brightness(40%) contrast(100%);
+        transform: rotate(-180deg);
+        transition: 1s
+    }
+    img.pup.eight{
+        filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    }
+    img.pup.eight:hover{
+        filter: invert(60%) sepia(90%) saturate(400%) hue-rotate(184deg) brightness(80%) contrast(120%);
+        transform: rotate(-180deg);
+        transition: 1s
+    }
+    
+    
+    .menu{
+        background-color: transparent;
+        position: relative;
+        width: 370px;
+        height: 370px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu li{
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        list-style: none;
+        transform-origin: 185px;
+        transition: 0.5s;
+        transition-delay: calc(0.1s * var(--i));
+        transform: rotate(0deg)translateX(150px);
+        border-radius: 50%;
+    }
+    .menu.active li{
+        
+        transform: rotate(calc(-360deg / 8 * var(--i)));
+        
+    }
+    .menu li.live:hover{
+        border: 3px solid #ffd700;
+        transition: all 0.5s ease;
+    }
+    
+    .menu li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border-radius: 50%;
+        transform: rotate(calc(360deg / -8 * var(--i)));
+        box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+        color: #111;
+        transition: 0.5s;
+    }
+    .menu li a:hover{
+        color: #ff1252;
+    }
+    
+    .toggle{
+        position: relative;
+        padding: 0;
+        height: 70px;
+        width: 70px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 0 4px rgba(0,0,0,0.15);
+        font-size: 2em;
+        transition: transform 1.25s;
+    }
+    .toggle:hover{
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        background-color: tran;
+        border: 9px solid #ffd700;
+        transform: scale(1.06);
+        transform: rotate(-180deg);
+        transition: 1s;
+    }
+    .toggle.active{
+        background-color: transparent;
+        border: 9px solid #ffd700;
+    }
+    
+    .menu.active .toggle{
+        transform: rotate(-315deg);
+    }
+    
+    
+
+}
