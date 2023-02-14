@@ -11,7 +11,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(45deg,black,#9612e3);
+    background: linear-gradient(45deg,gold
+    ,#9612e3);
 }
 
 
@@ -26,7 +27,7 @@ img.mother.active{
     transition: all 0.5s ease;
 }
 img.mother.active:hover{
-    transform: rotate(-180deg);
+    transform: scale(1.5);
     transition: 1s
 }
 
@@ -43,74 +44,87 @@ img.pup{
 }
 img.pup:hover {
     filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
-    transform: rotate(-180deg);
+    transform: scale(1.5);
     transition: 1s
 }
 img.pup.one{
     filter: invert(85%) sepia(25%) saturate(550%) hue-rotate(66deg) brightness(90%) contrast(110%);
  
 }
-img.pup.one.live:hover{
-    filter: invert(100%) sepia(6%) saturate(7393%) hue-rotate(355deg) brightness(100%) contrast(120%);
- 
-}
 img.pup.two{
-    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
-   
+    /*filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);*/
+    filter: invert(78%) sepia(67%) saturate(938%) hue-rotate(204deg) brightness(77%) contrast(120%);
 }
 img.pup.two:hover{
     filter: invert(78%) sepia(67%) saturate(938%) hue-rotate(204deg) brightness(77%) contrast(120%);
-    transform: rotate(-180deg);
     transition: 1s
 }
 img.pup.three{
-    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    /*filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);*/
+    filter: invert(56%) sepia(20%) saturate(1050%) hue-rotate(304deg) brightness(94%) contrast(120%);
 }
 img.pup.three:hover{
     filter: invert(56%) sepia(20%) saturate(1050%) hue-rotate(304deg) brightness(94%) contrast(120%);
-    transform: rotate(-180deg);
     transition: 1s
 }
 img.pup.four{
-    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    /*filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);*/
+    filter: invert(60%) sepia(4%) saturate(2397%) hue-rotate(291deg) brightness(120%) contrast(120%);
 }
 img.pup.four:hover{
     filter: invert(60%) sepia(4%) saturate(2397%) hue-rotate(291deg) brightness(120%) contrast(120%);
-    transform: rotate(-180deg);
     transition: 1s
 }
 img.pup.five{
-    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    /*filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);*/
+    filter: invert(99%) sepia(3%) saturate(505%) hue-rotate(93deg) brightness(115%) contrast(100%);
 }
 img.pup.five:hover{
     filter: invert(99%) sepia(3%) saturate(505%) hue-rotate(93deg) brightness(115%) contrast(100%);
-    transform: rotate(-180deg);
     transition: 1s
 }
 img.pup.six{
-    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    /*filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);*/
+    filter: invert(70%) sepia(72%) saturate(0%) hue-rotate(271deg) brightness(80%) contrast(106%);
 
 }
 img.pup.six:hover{
     filter: invert(70%) sepia(72%) saturate(0%) hue-rotate(271deg) brightness(80%) contrast(106%);
-    transform: rotate(-180deg);
     transition: 1s
 }
 img.pup.seven{
-    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    /*filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);*/
+    filter: invert(20%) sepia(1%) saturate(100%) hue-rotate(8deg) brightness(40%) contrast(100%);
 }
 img.pup.seven:hover{
     filter: invert(20%) sepia(1%) saturate(100%) hue-rotate(8deg) brightness(40%) contrast(100%);
-    transform: rotate(-180deg);
     transition: 1s
 }
 img.pup.eight{
-    filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);
+    /*filter: invert(38%) sepia(12%) saturate(587%) hue-rotate(169deg) brightness(120%) contrast(87%);*/
+    filter: invert(60%) sepia(90%) saturate(400%) hue-rotate(184deg) brightness(80%) contrast(120%);
 }
 img.pup.eight:hover{
     filter: invert(60%) sepia(90%) saturate(400%) hue-rotate(184deg) brightness(80%) contrast(120%);
-    transform: rotate(-180deg);
     transition: 1s
+}
+
+img.pup.live:hover{
+    filter: invert(100%) sepia(6%) saturate(7393%) hue-rotate(355deg) brightness(100%) contrast(120%);
+ 
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 
